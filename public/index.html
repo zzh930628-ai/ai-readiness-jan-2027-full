@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing-China | Building AI Readiness for the Future Economy | Payment Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div class="brand-block">
+          <div class="brand-copy">
+            <div class="brand-title">Sing-China</div>
+            <div class="brand-subtitle">Building AI Readiness for the Future Economy</div>
+          </div>
+        </div>
+        <img
+          src="./SCITGlogo.png"
+          alt="SCITG logo"
+          class="brand-logo brand-logo--partner"
+        />
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="product-layout">
+        <div class="poster-panel">
+          <figure class="programme-poster-image-wrap">
+            <img
+              src="./clients/business-china-ylp-shenzhen/haibao.png"
+              alt="Building AI Readiness for the Future Economy programme poster"
+              class="programme-poster-image"
+            />
+          </figure>
+
+          <section class="itinerary-card" aria-label="Programme itinerary">
+            <img
+              src="./clients/business-china-ylp-shenzhen/xingcheng.png"
+              alt="Programme itinerary"
+              class="itinerary-image"
+            />
+          </section>
+        </div>
+
+        <section class="details-panel" id="overview">
+          <p class="eyebrow">Sing-China</p>
+          <h2>Shenzhen-Guangzhou｜Building AI Readiness for the Future Economy</h2>
+
+          <div class="price-block">Programme Fee: SGD 2,750 nett</div>
+
+          <div class="details-summary details-summary--standalone programme-blurb">
+            <p>Ready to experience the future of AI firsthand?</p>
+            <p>Sign up for 'Building AI Readiness for the Future Economy: Technology, Innovation and Sustainable Development in Shenzhen and Guangzhou' now!</p>
+            <p>🌏 Embark on a 6-day learning journey to two of China's leading innovation hubs!</p>
+            <p>From insightful lectures by experienced industry leaders to exclusive visits to leading technology enterprises such as Tencent, Baidu, Leju Robotics and Aridge, discover how AI and emerging technologies are transforming industries and reshaping the future.</p>
+            <p>🤖 Get up close with cutting-edge innovations, from autonomous robotaxis and humanoid robots to flying cars, while gaining valuable insights into China's rapidly evolving technology landscape.</p>
+            <p>📅 Date: 17–22 January 2027</p>
+            <p>📍 Location: Shenzhen &amp; Guangzhou, China</p>
+            <p><strong>Note:</strong> The programme fee covers all lectures, site visits, transportation as outlined in the itinerary, accommodation, all lunches, and welcome and farewell dinners. Airfare and dinners during free-and-easy sessions are not included.</p>
+          </div>
+
+          <section class="pay-card" aria-labelledby="paynow-title">
+            <h3 id="paynow-title" style="margin-top:0;margin-bottom:14px;">PayNow QR Code</h3>
+            <img
+              src="./clients/business-china-ylp-shenzhen/2750.png"
+              alt="PayNow QR Code for payment"
+              class="paynow-qr"
+            />
+            <div class="pay-card__meta">
+              <p><strong>Amount due:</strong> SGD 2,750.00</p>
+              <p><strong>Payee:</strong> Sing-China</p>
+            </div>
+          </section>
+
+          <div class="payment-reference-note">
+            Please make payment via PayNow using the QR code above, then upload your payment receipt below and complete the form.
+          </div>
+        </section>
+      </section>
+
+      <section class="register-panel" id="register">
+        <div class="section-heading">
+          <p class="eyebrow">Payment Confirmation</p>
+          <h2>Confirm Your Payment &amp; Registration</h2>
+          <p>Complete the form below and upload your payment receipt to finalise your registration.</p>
+        </div>
+
+        <form id="registrationForm" enctype="multipart/form-data" novalidate>
+          <div class="form-grid">
+            <label>
+              <span>Full Name <span class="required">*</span></span>
+              <input name="fullName" type="text" required />
+            </label>
+          </div>
+
+          <div class="form-section compact-section">
+            <h3>Contact Details</h3>
+            <div class="form-grid two-column">
+              <label>
+                <span>Phone Number <span class="required">*</span></span>
+                <input
+                  name="contactNumber"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  placeholder="e.g. +65 9123 4567"
+                  pattern="^[0-9+()\-\s]{8,20}$"
+                  title="Please enter a valid phone number."
+                  required
+                />
+                <span class="field-help">We will contact you via WhatsApp.</span>
+              </label>
+
+              <label>
+                <span>Email Address <span class="required">*</span></span>
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="e.g. name@example.com"
+                  required
+                />
+                <span class="field-help">We will use this email for programme updates and confirmation.</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-section compact-section">
+            <h3>Invoice Requirements</h3>
+            <div class="invoice-choice">
+              <label class="checkbox-row radio-card">
+                <input type="radio" name="requireInvoice" value="no" checked />
+                <span>No invoice required</span>
+              </label>
+              <label class="checkbox-row radio-card">
+                <input type="radio" name="requireInvoice" value="yes" />
+                <span>Invoice required</span>
+              </label>
+            </div>
+            <label id="invoiceNameLabel" hidden>
+              <span>Invoice / Billing Entity Name <span class="required">*</span></span>
+              <input name="invoiceName" type="text" />
+              <span class="field-help">Please enter the entity name to appear on the invoice (e.g. company name).</span>
+            </label>
+          </div>
+
+          <div class="form-section compact-section">
+            <h3>Upload Payment Receipt <span class="required">*</span></h3>
+            <label>
+              <span>Payment Proof (screenshot or receipt PDF) <span class="required">*</span></span>
+              <input name="paymentProof" type="file" accept="image/*,application/pdf" required />
+              <span class="field-help">Accepted formats: JPG, PNG, PDF. Max file size: 10 MB.</span>
+            </label>
+          </div>
+
+          <div class="form-section compact-section pdpa-section">
+            <h3>PDPA Disclaimer</h3>
+            <p class="pdpa-copy">
+              By submitting this form, you consent to Sing-China collecting, using and disclosing your personal data for the purposes of reviewing your application, contacting you regarding the programme, administering participation matters, and related follow-up communication. Your information will be handled in accordance with applicable personal data protection requirements.
+            </p>
+          </div>
+
+          <div class="form-section compact-section">
+            <label class="checkbox-row">
+              <input name="consent" type="checkbox" required />
+              <span>
+                I confirm that the information provided is accurate and I have read and agree to the PDPA Disclaimer. <span class="required">*</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="submitButton">Submit Payment Confirmation</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
